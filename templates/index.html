@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block page_content %}
+<h2>Welcome {{ name }}</h2>
+<hr/>
+<h3>Star Wars movies</h3>
+<ul>
+  {% for movie in movies %}
+    <li>{{ movie.movie }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
