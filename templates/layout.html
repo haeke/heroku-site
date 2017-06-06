@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Portfolio Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="http://weloveiconfonts.com/api/?family=zocial|entypo" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flask Templates</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -18,9 +20,18 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Flask templates page</h1>
-
-    {% block page_content %} {% endblock %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1><span class="entypo-vcard"></span></h1>
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-right">Edwin Rivera</h1>
+          <h2 class="text-right">Full Stack Web Developer</h2>
+        </div>
+      </div>
+      {% block page_content %} {% endblock %}
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

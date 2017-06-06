@@ -1,11 +1,60 @@
 {% extends "layout.html" %}
 {% block page_content %}
-<h2>Welcome {{ name }}</h2>
-<hr/>
-<h3>Star Wars movies</h3>
-<ul>
-  {% for movie in movies %}
-    <li>{{ movie.movie }}</li>
-  {% endfor %}
-</ul>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="text-center">Portfolio Site</h1>
+    <p>Hello and welcome to my portfolio site. I'm an aspiring Full Stack Web Developer who is excited to learn new techniques and frameworks for all things on the web. I'm interested in gaining the knowledge that it takes to deploy software at all steps of development.</p>
+    <picture id="banner">
+      <source media="(min-width: 750px)" srcset="/static/img/editor-large.png" />
+      <source media="(min-width: 500px)" srcset="/static/img/editor-medium.png" />
+      <img src="/static/img/editor-small.png" class="img-responsive" alt="Editor Image">
+    </picture>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="text-center">Featured Projects</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <h1 class="adventuremap">Adventure Map</h1>
+    <a href="https://github.com/haeke/adventuremap">
+      <picture>
+        <source media="(min-width: 750px)" srcset="/static/img/map-large.png" />
+        <source media="(min-width: 500px)" srcset="/static/img/map-medium.png" />
+        <img src="static/img/map-small.png" alt="Adventure Map" class="img-responsive">
+      </picture>
+    </a>
+  </div>
+  <div class="col-md-4">
+    <h1 class="itemcatalog">Item Catalog</h1>
+    <a href="https://github.com/haeke/catalog">
+      <picture>
+        <source media="(min-width: 750px)" srcset="/static/img/catalog-large.png" />
+        <source media="(min-width: 500px)" srcset="/static/img/catalog-medium.png" />
+        <img src="/static/img/catalog-small.png" alt="Item Catalog" class="img-responsive">
+      </picture>
+    </a>
+  </div>
+  <div class="col-md-4">
+    <h1 class="blog">Multi User Blog</h1>
+    <a href="https://github.com/haeke/multiuserblog">
+      <picture>
+        <source media="(min-width: 750px)" srcset="/static/img/blog-large.png" />
+        <source media="(min-width: 500px)" srcset="/static/img/blog-medium.png" />
+        <img src="/static/img/blog-small.png" alt="Multi User Blog" class="img-responsive">
+      </picture>
+    </a>
+  </div>
+</div>
+<div class="row">
+  <footer class="col-md-12">
+    <h2 class="text-center">Email: riverae2@student.wpunj.edu</h2>
+    <h2 class="text-center">Github: <a href="https://github.com/haeke">Github link</a></h2>
+  </footer>
+</div>
+</div>
+
 {% endblock %}
