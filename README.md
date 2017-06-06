@@ -12,11 +12,11 @@
 - Werkzeug - version 0.11.15
 
 # How to run
- - clone the repository git clone https://github.com/haeke/flaskenvironment.git flaskenvironment
+ - clone the repository git clone https://github.com/haeke/heroku-site.git flaskenvironment
  - cd to flaskenvironment and run python app
 
 # Reference
 
 - This repository just serves as a reference for using Flask with jinja2 templates that uses inheritance.
 - A link to the 'live' version of the app can be found below.
-- https://flasking-around.herokuapp.com/
+- https://this-resume-site.herokuapp.com/
